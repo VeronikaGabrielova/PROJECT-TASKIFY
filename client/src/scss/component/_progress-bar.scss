@@ -1,0 +1,20 @@
+@use "./../abstracts/variables";
+.outer-bar {
+  width: 200px;
+  margin-right: 20px;
+  height: 14px;
+  background-color: rgb(216, 216, 216);
+  border-radius: 7px;
+  overflow: hidden;
+}
+.inner-bar {
+  height: 14px;
+}
+.modal-progress {
+  accent-color: variables.$accent;
+}
+@media screen and (max-width: 670px) {
+  .outer-bar {
+    width: 130px;
+  }
+}

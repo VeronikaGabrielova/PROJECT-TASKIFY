@@ -1,0 +1,93 @@
+@use "./../abstracts/variables";
+
+.button-container,
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-container button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: grey;
+  background-color: transparent;
+  box-shadow: 3px 0px 12px -3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.edit-task,
+.delete {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  text-transform: uppercase;
+}
+.edit-task:hover,
+.edit-task:focus {
+  color: white;
+  background-color: #5296a5;
+}
+.edit-task:active {
+  background-color: rgb(82, 150, 165, 0.5);
+}
+.delete:hover,
+.delete:focus {
+  color: white;
+  background-color: variables.$delete;
+}
+.delete:active {
+  background-color: rgb(255, 116, 119, 0.5);
+}
+.create {
+  background-color: variables.$accent;
+  padding: 15px;
+  border: 1px solid rgb(139, 177, 79);
+  color: white;
+}
+
+.create:hover,
+.create:focus {
+  cursor: pointer;
+  background-color: rgb(139, 177, 79);
+  color: white;
+}
+.create:active {
+  background-color: rgb(139, 177, 79, 0.8);
+}
+.signout {
+  border: 1px solid rgb(128, 128, 128, 0.5);
+}
+.signout:hover {
+  color: white;
+  background-color: #fb4d3d;
+}
+.signout:active {
+  background-color: rgb(251, 77, 61, 0.8);
+}
+input {
+  margin: 15px 0;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(128, 128, 128, 0.2);
+}
+
+input:focus {
+  border-bottom: 1px solid rgb(139 177 79);
+}
+
+.button-container,
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-container-sign {
+  margin-bottom: 15px;
+}
+.cross {
+  font-size: 20px;
+}
+.cross:hover,
+.cross:focus {
+  color: variables.$accent;
+}

@@ -1,0 +1,63 @@
+@use "./../abstracts/variables";
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.auth-box {
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 3px 1px 12px -3px rgba(0, 0, 0, 0.2);
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  padding: 20px 30px;
+}
+.auth-header {
+  text-align: center;
+  font-size: 30px;
+}
+.auth-options {
+  display: flex;
+  margin-top: 80px;
+}
+.auth-options button {
+  width: 50%;
+  border: none;
+  padding: 15px;
+  color: rgb(35, 38, 47);
+}
+.auth-options button:hover {
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+.auth-submit,
+.edit {
+  margin: 30px 0;
+  padding: 12px 15px;
+  box-shadow: 3px 0px 12px -3px rgba(0, 0, 0, 0.1);
+  background-color: #8bb14f;
+  color: white;
+  min-width: 150px;
+}
+.auth-submit:hover,
+.edit:hover {
+  background-color: rgb(139, 177, 79, 0.5);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-submit:active,
+.edit:active {
+  font-weight: bold;
+  font-size: 17px;
+}
+.auth-error {
+  color: variables.$accent;
+  text-decoration: underline;
+}

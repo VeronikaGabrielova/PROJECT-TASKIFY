@@ -1,0 +1,9 @@
+@use "./../abstracts/variables";
+
+.welcome {
+  text-align: right;
+  color: grey;
+}
+.welcome-user {
+  color: variables.$accent;
+}

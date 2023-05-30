@@ -1,0 +1,16 @@
+@use "./../abstracts/variables";
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+  width: 100%;
+  margin: 10px 0;
+  box-shadow: 0 0 0 1px rgb(0, 0, 0, 0.08);
+}
+.tick {
+  padding: 10px;
+  fill: variables.$accent;
+}
+.task-title {
+  width: 250px;
+}

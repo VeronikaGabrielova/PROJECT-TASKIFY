@@ -1,0 +1,16 @@
+body {
+    box-sizing: border-box;
+    margin: 150px 0;
+    padding: 0 30px;
+    background-color: whitesmoke;
+    color: rgb(69, 67, 67);
+    font-family: "Trebuchet MS", Arial, sans-serif;
+  }
+  .app {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255, 0.3);
+    box-shadow: 3px 0px 12px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
